@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake</title>
+    <style>
+        body
+{
+  background-image: linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb);
+}
+.container {
+    max-width: 960px;
+}
+
+@media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+
+@media (min-width: 992px)
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}
+
+@media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+
+
+
+.shadow {
+    box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+}
+.card {
+    border: 0;
+  z-index:0;
+}
+.progress-wrapper {
+    height: 340px;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    
+}
+
+.mauto{
+  margin:auto;
+}
+.wave::before, .wave::after {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 45%;
+    -webkit-transform: translateX(-50%) rotate(0);
+    transform: translateX(-50%) rotate(0);
+    -webkit-animation: rotate 6s linear infinite;
+    animation: rotate 6s linear infinite;
+    z-index: 10;
+}
+
+.wave::after {
+    border-radius: 47%;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transform: translateX(-50%) rotate(0);
+    transform: translateX(-50%) rotate(0);
+    -webkit-animation: rotate 10s linear -5s infinite;
+    animation: rotate 10s linear -5s infinite;
+    z-index: 20;
+}
+
+
+@keyframes rotate {
+  50% {
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+.imgset
+{
+  position: relative;
+    z-index: 1;
+    margin-bottom: -215px;
+}
+.imgset img
+{
+  width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-left: 28%;
+      box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+.img-conatiner
+{
+      background-color: #f7f3f3;
+    padding-top: 50px;
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+    </style>
+    <style>
+        @keyframes gradient {
+  0% {
+    background: radial-gradient(circle at center, rgba( 255, 125 , 125, 0 ) 0%, #fff 0%, #fff 100%);
+  }
+  25% {
+    background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.3 ) 24%, #fff 25%, #fff 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.5 ) 49%, #fff 50%, #fff 100%);
+  }
+  75% {
+    background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.8 ) 74%, #fff 75%, #fff 100%);
+  }
+  100% {
+    color: #fff;
+    background: radial-gradient(circle at center, #f88 99%, #fff 100%, #fff 100%);
+  }
+}
+
+body {
+  background: #68d;
+}
+button {
+  margin-left: calc( 50vw - 175px );
+  margin-top: calc( 50vh - 30px );
+  width: 350px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #666;
+  box-shadow: 0 6px 6px #06f;
+  outline: none;
+  
+}
+button:active {
+  /* set time duration to your needs */
+  animation: gradient 100ms;
+  background: #f88;
+  color: #fff;
+  box-shadow: none;
+}</style>
+<style>
+    img{
+        width: 35%;
+        height: 35%;
+    }
+    </style>
+</head>
+<body>
+    
+    <section class="section">
+        <div class="container">
+          <div class="row mt-5">
+           <div class="col-sm-10 col-md-10 mauto">
+             
+             <div class="img-conatiner">
+               <div class="imgset">
+               <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
+             </div>
+             
+             <div class="card  text-center">
+                <div class="position-relative progress-wrapper" data-color="#fdb157" style="background-image: linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb);">
+                  <div class="wave" data-progress="90%" style="bottom: 40%;"></div>
+                </div>
+               
+              </div>
+             </div>
+            </div>
+              
+            
+          
+          </div>
+        </div>
+        </section>
+        <br><br>
+        <img src="https://scontent.fktm3-1.fna.fbcdn.net/v/t1.15752-9/446043219_376761081550448_1593943138641843633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=N1E04MJUkMgQ7kNvgELz2cv&_nc_ht=scontent.fktm3-1.fna&oh=03_Q7cD1QH7fj6Wdz8BWqkIzGygMMDhJD4p0n8hhLcJBFnTDlqE_Q&oe=6690AE24">
+        <img src="https://scontent.fktm3-1.fna.fbcdn.net/v/t1.15752-9/436566212_995593868297099_657049178711968256_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=xLm1EAQnIMMQ7kNvgFTG1Jk&_nc_ht=scontent.fktm3-1.fna&oh=03_Q7cD1QFcgISsLqv_LYqrHhv_kb2iGJMJBFiejVzGmVHBDm2AxQ&oe=6690CB30">
+        <img src="https://scontent.fktm3-1.fna.fbcdn.net/v/t1.15752-9/436446863_1398406174194848_1582173487237328918_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HjIqm6zGC5wQ7kNvgHIiYOi&_nc_ht=scontent.fktm3-1.fna&oh=03_Q7cD1QHE-Tpd1jevVcpzMuMCjrxzMGZJaq3PBnb3sOCX_xQQ9w&oe=6690BFEE">
+        <img src="https://scontent.fktm3-1.fna.fbcdn.net/v/t1.15752-9/436495392_345026415277883_9168921597820409520_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BDIuePtHlnMQ7kNvgE0WBfW&_nc_ht=scontent.fktm3-1.fna&oh=03_Q7cD1QHvuVuDodyakG4FbEXAzB0L9jnlIfbXoe6ye_r35J2zRw&oe=6690B69F">
+       
+       <br> <a href="https://piya00.github.io/dad/second.html" target="_blank"><button>
+  Happy Birthday!🎂🎉
+</button>
+</a>
+</body>
+</html>
